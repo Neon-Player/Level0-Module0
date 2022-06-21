@@ -29,11 +29,19 @@ if __name__ == '__main__':
     # Set the turtle width to 1
     tTurtle.turtlesize(stretch_wid=1)
     # Create a variable to hold the number of sides in a pentagon
-    
+    x = 5
     # Create a variable to be the angle of 360 divided by the sides variable
-    
+    y = 360/x
     # Use a for loop to repeat ALL the following lines of code 360 times. 
-        
+    for i in range(360):
+        if i == 100:
+            tTurtle.turtlesize(stretch_wid=2)
+        if i == 200:
+            tTurtle.turtlesize(stretch_wid=3)
+        tTurtle.pencolor(get_next_color(i))
+        tTurtle.forward(i)
+        tTurtle.right(y+1)
+        tTurtle.hideturtle()
     # If the loop variable (i) is equal to 100, set the turtle width to 2
         
     # If the loop variable (i) is equal to 200, set the turtle width to 3

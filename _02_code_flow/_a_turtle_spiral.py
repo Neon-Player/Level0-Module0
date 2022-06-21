@@ -26,7 +26,7 @@ if __name__ == '__main__':
         newTurtle.color(get_random_color())
         newTurtle.forward(5*i)
         newTurtle.right(360/7)
-    newTurtle.turtlesize(stetch_wid=i)
+    newTurtle.turtlesize(width=i)
     # Set the turtle color to a random color
 
     # Move the turtle (5*i) pixels. 'i' is the loop variable
